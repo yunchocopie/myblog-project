@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #000000;
+        }
+
+        .main {
+            width: 40%;
+            margin: 0 auto;
+            /* 헤더를 가운데 정렬하기 위한 margin 설정 */
+            padding: 0 30px;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-columns: 10fr 1fr 1fr minmax(200px, 1fr) 1fr;
+            gap: 10px;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-inner:last-child {
+            justify-content: flex-end;
+        }
+
+        #nav-textbox {
+            width: 100%;
+        }
+
+        .nav-text {
+            padding: 10px 20px;
+            font-size: 13px;
+            height: 40px;
+            width: 80px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            border: 1px solid #000;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 13px;
+            height: 40px;
+            width: 80px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            border: 1px solid #000;
+            transition: 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #464646;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav-inner:first-child b {
+            font-size: 23px;
+        }
+
+        @media (max-width: 600px) {
+            .nav {
+                grid-template-columns: 1fr auto auto 1fr;
+            }
+        }
+
+        .main-content {
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        .main-box {
+            width: 40%;
+            height: calc(100vh - 50px);
+            border-radius: 5px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            /* 가운데 정렬을 위한 margin 설정 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 start -->
+    <header>
+        <div class="main">
+            <div class="nav">
+                <div class="nav-inner">
+                    <b>yunchocopie</b>
+                </div>
+                <div class="nav-inner">
+                    <button class="nav-button">join</button>
+                </div>
+                <div class="nav-inner">
+                    <button class="nav-button">login</button>
+                </div>
+                <div class="nav-inner">
+                    <input type="text" id="nav-textbox" class="nav-text" placeholder="search..">
+                </div>
+                <div class="nav-inner">
+                    <button class="nav-button">search</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <!-- 헤더 end -->
+
+    <!-- 메인 start -->
+    <main class="main-content">
+        <div class="main-box">
+
+        </div>
+    </main>
+    <!-- 메인 end -->
+</body>
+
+</html>
